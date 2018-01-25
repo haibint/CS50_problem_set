@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Dashboard
+{% endblock %}
+
+{% block main %}
+<h1>Transaction history</h1>
+<table>
+    <th>Symbol</th>
+    <th>Quantity</th>
+    <th>Price</th>
+    <th>time stamp</th>
+    {%for transaction in transactions %}
+    <tr>
+        <td>{{transaction.symbol}}</td>
+        <td>{{transaction.quantity}}</td>
+        <td>{{transaction.avg_price}}</td>
+        <td>{{transaction.update_time}}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+{% endblock %}

@@ -1,0 +1,7 @@
+0.  The maximum length of a word.
+1.  It calculate a bunch of resources comsuption of the (linux system?)
+2.  14 variable the the struct rusage.
+3.  TODO
+4.  TODO
+5.  TODO
+6.  Those are pointers to constants, These type of pointers can change the address they point to but cannot change the value kept at those address.

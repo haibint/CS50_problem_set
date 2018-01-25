@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Dashboard
+{% endblock %}
+
+{% block main %}
+<h1>This is {{user.username}}'s dashboard</h1>
+<h3>you have ${{user.cash}} left in your account</h3>
+<table>
+    <th>Symbol</th>
+    <th>Quantity</th>
+    <th>Current Price</th>
+    <th>Values</th>
+    {%for holding in holdings %}
+    <tr>
+        <td>{{holding.symbol}}</td>
+        <td>{{holding.total_quantity}}</td>
+        <td>{{holding.current_price}}</td>
+        <td>{{holding.total_value}}</td>
+    </tr>
+    {%endfor%}
+</table>
+<a href="{{ url_for('change_password') }}" class="button">Change you password</a>
+{% endblock %}

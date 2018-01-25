@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Dashboard
+{% endblock %}
+
+{% block main %}
+<h1>Choose the stock that you want to sell off</h1>
+<h3>you have ${{user.cash}} left in your account</h3>
+<form action="{{ url_for('sell') }}" method="post">
+    <fieldset>
+    {%for holding in holdings%}
+    <input type="radio" name="stock_to_sell" value="{{holding.symbol}}"/>
+    <label for="stock_to_sell">{{holding.symbol}}</label>
+    <label for="stock_to_sell">{{holding.current_price}}</label>
+    <label for="stock_to_sell">{{holding.total_value}}</label>
+    <br>
+    {%endfor%}
+    <button class="btn btn-default" type="submit">Sell</button>
+    </fieldset>
+</form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+1.  stdint.h gives me BMP-related data types based on Microsoft's own (gives me addtional data structures.)
+
+2.  The point here is to make the size of data strutures from stdint.h clear.
+
+3.  8, 32, 32, 16
+
+4.  acsii: BM, decimal: 66;77 hexadecimal: 42, 4d
+
+5.  One is Bitmapfile size and the another one is bitmapinfosize
+
+6.  I don't know
+7.  Bibitcount
+8.  If the  user put a filename that doesn't exist
+9.  because we just want to read one size of the "things" once at a time.
+10. 2
+11. skip over padding
+12. Current position of the file pointer

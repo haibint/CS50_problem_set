@@ -1,0 +1,8 @@
+0. TODO
+The game allows [3,9] dimensions of game board.
+1. TODO
+the game is presented using two-dimensional array.
+2. TODO
+the greet() function.
+3. TODO
+init(), draw(), move(), won().

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Information of the quote
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <td>{{information.name}}</td>
+        </tr>
+        <tr>
+            <td>{{information.price}}</td>
+        </tr>
+        <tr>
+            <td>{{information.symbol}}</td>
+        </tr>
+    </table>
+{% endblock %}
